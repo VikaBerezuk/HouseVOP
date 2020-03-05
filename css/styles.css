@@ -15,18 +15,30 @@ img {
   background-repeat: no-repeat; }
 
 .hedder {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
-  position: sticky;
+  padding: 0 10px;
+  position: fixed;
   top: 0;
   z-index: 4; }
   .hedder__context {
     float: right;
     margin-top: 10px; }
 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: white; }
+
+.navbar-toggle {
+  width: 44px;
+  margin-top: 20px; }
+
 .top {
   background-size: contain;
   background: url("../img/bg-top.jpg"); }
+  .top__context {
+    width: 100%; }
   .top__titel {
     text-align: center;
     color: #D4C17F;
@@ -102,6 +114,7 @@ img {
     width: 355px;
     height: 216px;
     margin: 20px 3px;
+    padding: 0;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: contain; }
@@ -123,7 +136,8 @@ img {
         margin: 20px 20px; } }
     .home__content-item.loft1 {
       background-image: url(../img/icon/loft1.svg);
-      background-size: contain; }
+      background-size: contain;
+      transition-duration: 1s; }
       @media (min-width: 1200px) {
         .home__content-item.loft1:hover {
           transform: scale(2.13) translate(132px, 85px);
@@ -132,7 +146,8 @@ img {
           z-index: 3; } }
     .home__content-item.loft2 {
       background-image: url(../img/icon/loft2.svg);
-      background-size: contain; }
+      background-size: contain;
+      transition-duration: 1s; }
       @media (min-width: 1200px) {
         .home__content-item.loft2:hover {
           transform: scale(2.13) translate(-132px, 85px);
@@ -141,7 +156,8 @@ img {
           z-index: 3; } }
     .home__content-item.loft3 {
       background-image: url(../img/icon/loft1.svg);
-      background-size: contain; }
+      background-size: contain;
+      transition-duration: 1s; }
       @media (min-width: 1200px) {
         .home__content-item.loft3:hover {
           transform: scale(2.13) translate(132px, -85px);
@@ -150,7 +166,8 @@ img {
           z-index: 3; } }
     .home__content-item.loft4 {
       background-image: url(../img/icon/loft2.svg);
-      background-size: contain; }
+      background-size: contain;
+      transition-duration: 1s; }
       @media (min-width: 1200px) {
         .home__content-item.loft4:hover {
           transform: scale(2.13) translate(-132px, -85px);
@@ -209,39 +226,49 @@ h2 {
   .look__text {
     font-family: Raleway;
     font-size: 16px;
-    padding-bottom: 20px; }
-  .look__content-text {
+    padding-bottom: 20px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .look__text {
+        text-align: left; } }
+  .look-text {
     font-size: 13px;
     font-family: Raleway;
-    padding-bottom: 22px; }
-  .look__content input {
-    width: 100%;
-    background-color: rgba(145, 144, 144, 0.5);
-    font-family: Raleway;
-    font-size: 14px;
-    border: none;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 25px;
-    color: #BEBEBE;
-    cursor: pointer; }
-    .look__content input:focus {
-      border: 1px solid;
-      box-shadow: 1px 1px 3px 2px; }
-  .look__content button {
-    background: #D4C17F;
-    font-family: Raleway;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    border: none; }
-    .look__content button:hover > a {
-      color: #fff; }
-    .look__content button:hover {
-      border: 1px solid;
-      box-shadow: 1px 1px 3px 2px;
-      color: #fff; }
+    padding-bottom: 22px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .look-text {
+        text-align: left; } }
+
+input {
+  width: 100%;
+  background-color: rgba(145, 144, 144, 0.5);
+  font-family: Raleway;
+  font-size: 14px;
+  border: 1px solid rgba(145, 144, 144, 0.5);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  color: #BEBEBE;
+  cursor: text; }
+  input:focus {
+    border: 1px solid;
+    box-shadow: 1px 1px 3px 2px; }
+
+button {
+  background: #D4C17F;
+  font-family: Raleway;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border: none; }
+  button:hover > a {
+    color: #fff; }
+  button:hover {
+    border: 1px solid;
+    box-shadow: 1px 1px 3px 2px;
+    color: #fff; }
 
 .video {
   position: relative; }

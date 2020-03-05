@@ -20,9 +20,11 @@ img {
 	background-repeat: no-repeat;
 }
 .hedder {
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.1);
 	border: none;
-	position: sticky;
+	padding: 0 10px;
+	position: fixed;
 	top: 0;
 	z-index: 4;
 
@@ -31,10 +33,21 @@ img {
 		margin-top: 10px;
 	}
 }
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+	color: white;
+}
+.navbar-toggle {
+    width: 44px;
+	margin-top: 20px;
+}
 .top {
 	background-size: contain;
 	background: url("../img/bg-top.jpg");
 
+	&__context {
+		width: 100%;
+	}
 	&__titel {
 		text-align: center;
 		color: $c-main;
@@ -132,6 +145,7 @@ img {
 			width: 355px;
 			height: 216px;
 			margin: 20px 3px;
+			padding: 0;
 			cursor: pointer;
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -156,6 +170,7 @@ img {
 			&.loft1 {
 				background-image: url(../img/icon/loft1.svg);
 				background-size: contain;
+				transition-duration: 1s;
 
 				&:hover {
 					@media (min-width: 1200px) {
@@ -169,6 +184,7 @@ img {
 			&.loft2 {
 				background-image: url(../img/icon/loft2.svg);
 				background-size: contain;
+				transition-duration: 1s;
 			
 				&:hover {
 					@media (min-width: 1200px) {
@@ -182,6 +198,7 @@ img {
 			&.loft3 {
 				background-image: url(../img/icon/loft1.svg);
 				background-size: contain;
+				transition-duration: 1s;
 
 				&:hover {
 					@media (min-width: 1200px) {
@@ -195,6 +212,7 @@ img {
 			&.loft4 {
 				background-image: url(../img/icon/loft2.svg);
 				background-size: contain;
+				transition-duration: 1s;
 				
 				&:hover {
 					@media (min-width: 1200px) {
@@ -205,7 +223,6 @@ img {
 					}
 				}
 			}
-
 			&-text {
 				font-family: Raleway;
 				font-size: 24px;
@@ -265,49 +282,56 @@ h2 {
 		font-family: Raleway;
 		font-size: 16px;
 		padding-bottom: 20px;
+		text-align: center;
+
+		@media (min-width: 992px) {
+			text-align: left;
+		}
 	}
-	&__content {
+	&-text {
+		font-size: 13px;
+		font-family: Raleway;
+		padding-bottom: 22px;
+		text-align: center;
 
-		&-text {
-			font-size: 13px;
-			font-family: Raleway;
-			padding-bottom: 22px;
+		@media (min-width: 992px) {
+			text-align: left;
 		}
-		input {
-			width: 100%;
-			background-color: rgba(145, 144, 144, 0.5);
-			font-family: Raleway;
-			font-size: 14px;
-			border: none;
-			text-align: center;
-			padding: 10px;
-			margin-bottom: 25px;
-			color: #BEBEBE;
-			cursor: pointer;
+	}
+}
+input {
+	width: 100%;
+	background-color: rgba(145, 144, 144, 0.5);
+	font-family: Raleway;
+	font-size: 14px;
+	border: 1px solid rgba(145, 144, 144, 0.5);
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 25px;
+	color: #BEBEBE;
+	cursor: text;
 
-			&:focus {
-				border: 1px solid;
-				box-shadow: 1px 1px 3px 2px;
-			}
-		}
-		button {
-			background: #D4C17F;
-			font-family: Raleway;
-			font-size: 16px;
-			text-align: center;
-			padding: 10px;
-			width: 100%;
-			border: none;
+	&:focus {
+		border: 1px solid;
+		box-shadow: 1px 1px 3px 2px;
+	}
+}
+button {
+	background: #D4C17F;
+	font-family: Raleway;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	border: none;
 
-			&:hover > a {
-				color: #fff;
-			}
-			&:hover {
-				border: 1px solid;
-				box-shadow: 1px 1px 3px 2px;
-				color: #fff;
-			}
-		}
+	&:hover > a {
+		color: #fff;
+	}
+	&:hover {
+		border: 1px solid;
+		box-shadow: 1px 1px 3px 2px;
+		color: #fff;
 	}
 }
 .video {

@@ -21,12 +21,12 @@ img {
 }
 .hedder {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.1);
 	border: none;
 	padding: 0 10px;
 	position: fixed;
 	top: 0;
 	z-index: 4;
+	background-color:  #242B33;
 
 	&__context {
 		float: right;
@@ -135,8 +135,20 @@ img {
     }
     @media (min-width: 1200px) {
         padding: 40px 0;
-    } 
+	} 
 
+	&-l:hover {
+		z-index: 5;
+	}
+	&-ll:hover {
+		z-index: 4;
+	}
+	&-lll:hover {
+		z-index: 3;
+	}
+	&-llll:hover {
+		z-index: 2;
+	}
 	&__content {
 		text-align: center;
 		position: relative;
@@ -144,27 +156,18 @@ img {
 		&-item {
 			width: 355px;
 			height: 216px;
-			margin: 20px 3px;
-			padding: 0;
 			cursor: pointer;
 			background-repeat: no-repeat;
 			background-size: contain;
 
-			@media (min-width: 414px) {
-				margin: 20px 33px;
-			}
-			@media (min-width: 768px) {
-				margin: 20px 10px;
-			}
+			
 			@media (min-width: 992px) {
 				width: 455px;
 				height: 280px;
-				margin: 20px 15px;
 			}
 			@media (min-width: 1200px) {
 				width: 535px;
 				height: 320px;
-				margin: 20px 20px;
 			}
 
 			&.loft1 {
@@ -177,7 +180,7 @@ img {
 						transform: scale(2.13) translate(132px, 85px);
 						transition-duration: 2s;
 						transition-timing-function: linear;
-						z-index: 3;
+						
 					}
 				}
 			}
@@ -188,10 +191,10 @@ img {
 			
 				&:hover {
 					@media (min-width: 1200px) {
-						transform: scale(2.13) translate(-132px, 85px);
+						transform: scale(2.13) translate(-133px, 85px);
 						transition-duration: 2s;
 						transition-timing-function: linear;
-						z-index: 3;
+						
 					}
 				}
 			}
@@ -205,7 +208,7 @@ img {
 						transform: scale(2.13) translate(132px, -85px);
 						transition-duration: 2s;
 						transition-timing-function: linear;
-						z-index: 3;
+						
 					}
 				}
 			}
@@ -219,7 +222,7 @@ img {
 						transform: scale(2.13) translate(-132px, -85px);
 						transition-duration: 2s;
 						transition-timing-function: linear;
-						z-index: 3;
+						
 					}
 				}
 			}
@@ -364,4 +367,44 @@ button {
     @media (min-width: 1200px) {
         padding: 160px 0;
     } 
+}
+.container {
+	position: relative;
+}
+.map {
+	margin-top: 150px;
+
+	&_img {
+		margin-top: 20px;
+		width: 100%;
+	}
+	&_v {
+		position: absolute;
+		top: 97px;
+		left: -132px;
+	}
+}
+footer {
+	background: #2D343C;
+	padding: 70px 0 50px;
+	text-align: center;
+
+	@media ( min-width: 768px) {
+		text-align: left;
+	}
+	.footer {
+		&_text {
+			line-height: 30px;
+		}
+		&_email {
+			color: $c-main;
+		}
+	}
+	i {
+		padding-right: 20px;
+		font-weight: 400;
+		font-size: 22px;
+		margin-top: 10px;
+
+	}
 }

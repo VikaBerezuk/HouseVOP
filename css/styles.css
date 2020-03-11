@@ -16,12 +16,12 @@ img {
 
 .hedder {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
   border: none;
   padding: 0 10px;
   position: fixed;
   top: 0;
-  z-index: 4; }
+  z-index: 4;
+  background-color: #242B33; }
   .hedder__context {
     float: right;
     margin-top: 10px; }
@@ -107,33 +107,31 @@ img {
 @media (min-width: 1200px) {
   .home {
     padding: 40px 0; } }
+.home-l:hover {
+  z-index: 5; }
+.home-ll:hover {
+  z-index: 4; }
+.home-lll:hover {
+  z-index: 3; }
+.home-llll:hover {
+  z-index: 2; }
 .home__content {
   text-align: center;
   position: relative; }
   .home__content-item {
     width: 355px;
     height: 216px;
-    margin: 20px 3px;
-    padding: 0;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: contain; }
-    @media (min-width: 414px) {
-      .home__content-item {
-        margin: 20px 33px; } }
-    @media (min-width: 768px) {
-      .home__content-item {
-        margin: 20px 10px; } }
     @media (min-width: 992px) {
       .home__content-item {
         width: 455px;
-        height: 280px;
-        margin: 20px 15px; } }
+        height: 280px; } }
     @media (min-width: 1200px) {
       .home__content-item {
         width: 535px;
-        height: 320px;
-        margin: 20px 20px; } }
+        height: 320px; } }
     .home__content-item.loft1 {
       background-image: url(../img/icon/loft1.svg);
       background-size: contain;
@@ -142,18 +140,16 @@ img {
         .home__content-item.loft1:hover {
           transform: scale(2.13) translate(132px, 85px);
           transition-duration: 2s;
-          transition-timing-function: linear;
-          z-index: 3; } }
+          transition-timing-function: linear; } }
     .home__content-item.loft2 {
       background-image: url(../img/icon/loft2.svg);
       background-size: contain;
       transition-duration: 1s; }
       @media (min-width: 1200px) {
         .home__content-item.loft2:hover {
-          transform: scale(2.13) translate(-132px, 85px);
+          transform: scale(2.13) translate(-133px, 85px);
           transition-duration: 2s;
-          transition-timing-function: linear;
-          z-index: 3; } }
+          transition-timing-function: linear; } }
     .home__content-item.loft3 {
       background-image: url(../img/icon/loft1.svg);
       background-size: contain;
@@ -162,8 +158,7 @@ img {
         .home__content-item.loft3:hover {
           transform: scale(2.13) translate(132px, -85px);
           transition-duration: 2s;
-          transition-timing-function: linear;
-          z-index: 3; } }
+          transition-timing-function: linear; } }
     .home__content-item.loft4 {
       background-image: url(../img/icon/loft2.svg);
       background-size: contain;
@@ -172,8 +167,7 @@ img {
         .home__content-item.loft4:hover {
           transform: scale(2.13) translate(-132px, -85px);
           transition-duration: 2s;
-          transition-timing-function: linear;
-          z-index: 3; } }
+          transition-timing-function: linear; } }
     .home__content-item-text {
       font-family: Raleway;
       font-size: 24px;
@@ -295,5 +289,35 @@ button {
   @media (min-width: 1200px) {
     .question {
       padding: 160px 0; } }
+
+.container {
+  position: relative; }
+
+.map {
+  margin-top: 150px; }
+  .map_img {
+    margin-top: 20px;
+    width: 100%; }
+  .map_v {
+    position: absolute;
+    top: 97px;
+    left: -132px; }
+
+footer {
+  background: #2D343C;
+  padding: 70px 0 50px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    footer {
+      text-align: left; } }
+  footer .footer_text {
+    line-height: 30px; }
+  footer .footer_email {
+    color: #D4C17F; }
+  footer i {
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

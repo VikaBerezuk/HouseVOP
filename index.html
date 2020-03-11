@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap&subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
 	<script src="https://use.fontawesome.com/c015006049.js"></script>
+	<script src="https://kit.fontawesome.com/1f4d0ef3cb.js" crossorigin="anonymous"></script>
 	<!-- bootstrap -->
 	<link 
 		rel="stylesheet" 
@@ -25,7 +26,7 @@
 	<link rel="stylesheet" href="css/styles.css">	
 </head>
 <body>
-	<section class="hedder">
+	<hedder>
 		<nav class="navbar navbar-default hedder" role="navigation">
 			<div class="container">
 			  	<div class="navbar-header">
@@ -46,7 +47,7 @@
 			  	</div>
 			</div>
 		</nav>
-	</section>
+	</hedder>
 	<section class="top">
 		<h1 class="top__titel">Жилой комплекс </br> в историческом центре</h1>		  
 		<div class="top__mouse">
@@ -103,16 +104,20 @@
 				<div class="element3"><img src="img/icon/III.svg" alt="III"></div>
 			</h2>
 			<div class="home__content row text-center">
-				<div class="home__content-item col-xs-12  col-md-6 loft1">
+				<div class="col-xs-12  col-sm-6 home-l">
+					<div class="home__content-item loft1"></div>
 					<div class="home__content-item-text">Лофт - 3 этажа</div>
 				</div>
-				<div class="home__content-item col-xs-12  col-md-6 loft2">
+				<div class="col-xs-12  col-sm-6 home-ll">
+					<div class="loft2 home__content-item"></div>
 					<div class="home__content-item-text">Лофт - 2 этажа</div>
 				</div>
-				<div class="home__content-item col-xs-12  col-md-6 loft3">
+				<div class="col-xs-12  col-sm-6 home-lll">
+					<div class="home__content-item loft3"></div>
 					<div class="home__content-item-text">Лофт - 3 этажа</div>
 				</div>
-				<div class="home__content-item col-xs-12  col-md-6 loft4">
+				<div class="col-xs-12  col-sm-6 home-llll">
+					<div class="home__content-item loft4"></div>
 					<div class="home__content-item-text">Лофт - 2 этажа</div>
 				</div>
 			</div>
@@ -154,6 +159,14 @@
 			</div>
 		</div>
 	</section>
+	<section class="map" id="map">
+		<div class="container">
+			<h2>Район на карте</h2>
+			<img src="img/icon/V.svg" alt="V" class="map_v">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0924218562586!2d36.232820614633894!3d49.99087667941459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f197eaf81b%3A0x7fb35620b3e843c9!2sHillel%20IT%20School!5e0!3m2!1suk!2sua!4v1583909596889!5m2!1suk!2sua" 
+			class="map_img" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</section>
 	<section class="question">
 		<div class="container">
 			<h2>Есть вопросы?</h2>
@@ -174,7 +187,39 @@
 		</div>
 	</section>
 	<footer>
-		<div class="container" id="footer"></div>
+		<div class="container" id="footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<img src="img/icon/logo.svg" alt="HouseVOP">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="footer_text"><a href="#">О комплексе</a></div>
+					<div class="footer_text"><a href="#">Район</a></div>
+					<div class="footer_text"><a href="#">Каталог квартир</a></div>
+					<div class="footer_text"><a href="#">Ипотека</a></div>
+					<div class="footer_text"><a href="#">Контакты</a></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="footer_text"><a href="#">О комплексе</a></div>
+					<div class="footer_text"><a href="#">Район</a></div>
+					<div class="footer_text"><a href="#">Каталог квартир</a></div>
+					<div class="footer_text"><a href="#">Ипотека</a></div>
+					<div class="footer_text"><a href="#">Контакты</a></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="footer_text">Адрес: Наб. реки Фонтанки 10-15</div>
+					<div class="footer_text">Телефогн: 8 (812) 123-45-67</div>
+					<div class="footer_text">Отдел продаж: 10-00 - 20-00</div>
+					<div class="footer_text">E-mail: <a href="#" class="footer_email">vip@housevip.ru</a></div>
+					<div>
+						<a href="https://www.youtube.com/?hl=uk&gl=UA"><i class="fab fa-youtube"></i></a>
+						<a href="https://vk.com/"><i class="fab fa-vk"></i></a>
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="js/script.js"></script>
 </body>

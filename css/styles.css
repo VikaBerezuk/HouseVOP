@@ -30,6 +30,19 @@ img {
 .navbar-default .navbar-nav > li > a:hover {
   color: white; }
 
+.navbar-collapse {
+  width: 100vw;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .navbar-collapse {
+      width: 73%; } }
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      width: 56%; } }
+  @media (min-width: 1200px) {
+    .navbar-collapse {
+      width: 46%; } }
+
 .navbar-toggle {
   width: 44px;
   margin-top: 20px; }
@@ -107,14 +120,45 @@ img {
 @media (min-width: 1200px) {
   .home {
     padding: 40px 0; } }
-.home-l:hover {
-  z-index: 5; }
-.home-ll:hover {
+.home-l {
+  position: relative;
+  z-index: 5;
+  transition-duration: 1s; }
+  @media (min-width: 1200px) {
+    .home-l:hover {
+      transform: scale(2.13) translate(138px, 82px);
+      transition-duration: 2s;
+      transition-timing-function: linear; } }
+.home-ll {
+  transition-duration: 1s;
+  position: relative;
   z-index: 4; }
-.home-lll:hover {
+  @media (min-width: 1200px) {
+    .home-ll:hover {
+      transform: scale(2.13) translate(-136px, 82px);
+      transition-duration: 2s;
+      transition-timing-function: linear;
+      z-index: 6; } }
+.home-lll {
+  transition-duration: 1s;
+  position: relative;
   z-index: 3; }
-.home-llll:hover {
+  @media (min-width: 1200px) {
+    .home-lll:hover {
+      transform: scale(2.13) translate(138px, -82px);
+      transition-duration: 2s;
+      transition-timing-function: linear;
+      z-index: 6; } }
+.home-llll {
+  transition-duration: 1s;
+  position: relative;
   z-index: 2; }
+  @media (min-width: 1200px) {
+    .home-llll:hover {
+      transform: scale(2.13) translate(-136px, -82px);
+      transition-duration: 2s;
+      transition-timing-function: linear;
+      z-index: 6; } }
 .home__content {
   text-align: center;
   position: relative; }
@@ -134,47 +178,23 @@ img {
         height: 320px; } }
     .home__content-item.loft1 {
       background-image: url(../img/icon/loft1.svg);
-      background-size: contain;
-      transition-duration: 1s; }
-      @media (min-width: 1200px) {
-        .home__content-item.loft1:hover {
-          transform: scale(2.13) translate(132px, 85px);
-          transition-duration: 2s;
-          transition-timing-function: linear; } }
+      background-size: contain; }
     .home__content-item.loft2 {
       background-image: url(../img/icon/loft2.svg);
-      background-size: contain;
-      transition-duration: 1s; }
-      @media (min-width: 1200px) {
-        .home__content-item.loft2:hover {
-          transform: scale(2.13) translate(-133px, 85px);
-          transition-duration: 2s;
-          transition-timing-function: linear; } }
+      background-size: contain; }
     .home__content-item.loft3 {
       background-image: url(../img/icon/loft1.svg);
-      background-size: contain;
-      transition-duration: 1s; }
-      @media (min-width: 1200px) {
-        .home__content-item.loft3:hover {
-          transform: scale(2.13) translate(132px, -85px);
-          transition-duration: 2s;
-          transition-timing-function: linear; } }
+      background-size: contain; }
     .home__content-item.loft4 {
       background-image: url(../img/icon/loft2.svg);
-      background-size: contain;
-      transition-duration: 1s; }
-      @media (min-width: 1200px) {
-        .home__content-item.loft4:hover {
-          transform: scale(2.13) translate(-132px, -85px);
-          transition-duration: 2s;
-          transition-timing-function: linear; } }
+      background-size: contain; }
     .home__content-item-text {
       font-family: Raleway;
       font-size: 24px;
       position: absolute;
       bottom: 44px;
       left: 60px;
-      z-index: 2; }
+      z-index: 0; }
 
 h2 {
   text-align: center;

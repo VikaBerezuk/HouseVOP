@@ -37,6 +37,20 @@ img {
 .navbar-default .navbar-nav>li>a:hover {
 	color: white;
 }
+.navbar-collapse {
+    width: 100vw;
+	text-align: center;
+
+	@media (min-width: 768px) { 
+		width: 73%;
+	}
+	@media (min-width: 992px) { 
+		width: 56%;
+	}
+	@media (min-width: 1200px) { 
+		width: 46%;
+	}
+}
 .navbar-toggle {
     width: 44px;
 	margin-top: 20px;
@@ -137,17 +151,60 @@ img {
         padding: 40px 0;
 	} 
 
-	&-l:hover {
+	&-l {
+		position: relative;
 		z-index: 5;
+		transition-duration: 1s;
+
+		&:hover {
+			@media (min-width: 1200px) {
+				transform: scale(2.13) translate(138px, 82px);
+				transition-duration: 2s;
+				transition-timing-function: linear;
+			}
+		}
 	}
-	&-ll:hover {
+	&-ll {
+		transition-duration: 1s;
+		position: relative;
 		z-index: 4;
+
+		&:hover {
+			@media (min-width: 1200px) {
+				transform: scale(2.13) translate(-136px, 82px);
+				transition-duration: 2s;
+				transition-timing-function: linear;
+				z-index: 6;
+			}
+		}
 	}
-	&-lll:hover {
+	&-lll {
+		transition-duration: 1s;
+		position: relative;
 		z-index: 3;
+
+		&:hover {
+			@media (min-width: 1200px) {
+				transform: scale(2.13) translate(138px, -82px);
+				transition-duration: 2s;
+				transition-timing-function: linear;
+				z-index: 6;
+			}
+		}
 	}
-	&-llll:hover {
+	&-llll {
+		transition-duration: 1s;
+		position: relative;
 		z-index: 2;
+				
+		&:hover {
+			@media (min-width: 1200px) {
+				transform: scale(2.13) translate(-136px, -82px);
+				transition-duration: 2s;
+				transition-timing-function: linear;
+				z-index: 6;
+			}
+		}
 	}
 	&__content {
 		text-align: center;
@@ -173,58 +230,18 @@ img {
 			&.loft1 {
 				background-image: url(../img/icon/loft1.svg);
 				background-size: contain;
-				transition-duration: 1s;
-
-				&:hover {
-					@media (min-width: 1200px) {
-						transform: scale(2.13) translate(132px, 85px);
-						transition-duration: 2s;
-						transition-timing-function: linear;
-						
-					}
-				}
 			}
 			&.loft2 {
 				background-image: url(../img/icon/loft2.svg);
 				background-size: contain;
-				transition-duration: 1s;
-			
-				&:hover {
-					@media (min-width: 1200px) {
-						transform: scale(2.13) translate(-133px, 85px);
-						transition-duration: 2s;
-						transition-timing-function: linear;
-						
-					}
-				}
 			}
 			&.loft3 {
 				background-image: url(../img/icon/loft1.svg);
 				background-size: contain;
-				transition-duration: 1s;
-
-				&:hover {
-					@media (min-width: 1200px) {
-						transform: scale(2.13) translate(132px, -85px);
-						transition-duration: 2s;
-						transition-timing-function: linear;
-						
-					}
-				}
 			}
 			&.loft4 {
 				background-image: url(../img/icon/loft2.svg);
 				background-size: contain;
-				transition-duration: 1s;
-				
-				&:hover {
-					@media (min-width: 1200px) {
-						transform: scale(2.13) translate(-132px, -85px);
-						transition-duration: 2s;
-						transition-timing-function: linear;
-						
-					}
-				}
 			}
 			&-text {
 				font-family: Raleway;
@@ -232,7 +249,7 @@ img {
 				position: absolute;
 				bottom: 44px;
 				left: 60px;
-				z-index: 2;
+				z-index: 0;
 			}
 		}
 	}
